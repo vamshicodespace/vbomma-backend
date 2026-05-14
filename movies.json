@@ -1,0 +1,254 @@
+[
+
+{
+  "id": 25,
+  "title": "Raakaasa",
+  "thumbnail": "https://i.redd.it/mpktcj8c4wsg1.jpeg",
+  "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Other/Raakaasa.mp4",
+  "description": "A thrilling action drama filled with mystery, intense emotions, and powerful confrontations.",
+  "director": "Manasa Sharma",
+  "year": "2026",
+  "genre": "Action, Thriller, Drama"
+},
+
+{
+  "id": 24,
+  "title": "Dacoit",
+  "thumbnail": "https://cdn.district.in/movies-assets/images/cinema/Dacoit_Poster-649ec270-3312-11f1-b3d5-d331ad8039d4.jpg",
+  "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/adavi+shesh/Dacoit.mp4",
+  "description": "An intense action drama about former lovers who become enemies and face dangerous situations filled with emotions, revenge, and survival.",
+  "director": "Shaneil Deo",
+  "year": "2026",
+  "genre": "Action, Drama, Thriller"
+},
+{
+  "id": 23,
+  "title": "Vaazha 2",
+  "thumbnail": "https://imgix.hoyts.com.au/mx/posters/au/vaazha-ii-biopic-of-a-billion-bros-9deff941.jpg?fit=crop&auto=compress%2Cformat&w=160&h=240",
+  "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Other/Vaazha+2.mp4",
+  "description": "A comedy drama entertainer filled with friendship, emotions, fun moments, and youthful adventures.",
+  "director": "Savin SA",
+  "year": "2026",
+  "genre": "Comedy, Drama"
+},
+{
+  "id": 22,
+  "title": "Band Melam",
+  "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWjygeenpNZsXpdA8j8egG3iVqRXNDEN44XQ&s",
+  "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Other/Band_Melam.mp4",
+  "description": "A musical drama entertainer filled with emotions, celebrations, friendship, and vibrant band performances.",
+  "director": "Sathish Javvaji",
+  "year": "2026",
+  "genre": "Drama, Musical, Entertainment"
+},
+  {
+  "id": 21,
+  "title": "Love Insurance Kompany",
+  "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGViNGU3MWUtNDY0Zi00ZTJiLTg0MDUtZGNkN2ZkNjYwOWJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Other/LIK.mp4",
+  "description": "A futuristic romantic comedy set in 2040 where technology and algorithms control relationships through a dating app called LIK.",
+  "director": "Vignesh Shivan",
+  "year": "2026",
+  "genre": "Romance, Sci-Fi, Comedy"
+},
+  {
+    "id": 20,
+    "title": "Swapped",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQGiVugmPpTfOus0Dr_L9s6UP0F1aWZlN3Hw&s",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Animated/Swapped.mp4",
+    "description": "The story is set in a fantastical valley and follows Ollie and Ivy after a magical mishap swaps their bodies.",
+    "director": "Nathan Greno",
+    "year": "2026",
+    "genre": "Romance, Comedy, Drama"
+  },
+  {
+    "id": 19,
+    "title": "Youth",
+    "thumbnail": "https://cdn.district.in/movies-assets/images/cinema/Youth_Poster-65fdaac0-05a2-11f1-adea-2ddc896211a4.jpg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Other/Youth.mp4",
+    "description": "A coming-of-age romantic comedy-drama about a teenager searching for true love.",
+    "director": "Ken Karunas",
+    "year": "2026",
+    "genre": "Comedy, Drama, Romance"
+  },
+  {
+    "id": 18,
+    "title": "Happy Raj",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScjZQOEvyCwjCnwk172ZsldtI9nXhT6HkgBw&s",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Other/Happy_Raj_FIXED.mp4",
+    "description": "A cheerful young man navigates friendship, love, and family struggles.",
+    "director": "Maria Raja Elanchezian.",
+    "year": "2026",
+    "genre": "Drama, Family"
+  },
+  {
+    "id": 17,
+    "title": "Dhurandhar: The Revenge",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Dubbed/Dhurandhar.jpeg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Dubbed/Dhurandhar-+The+Revenge.mp4",
+    "description": "An undercover agent rises in Pakistan seeking revenge for his family's murder.",
+    "director": "Aditya Dhar",
+    "year": "2026",
+    "genre": "Action, Spy Thriller, Crime"
+  },
+  {
+    "id": 16,
+    "title": "Raja Saab",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Prabhas/raja_saab-22.jpg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Prabhas/Raja_saab.mp4",
+    "description": "A horror-comedy fantasy film directed by Maruthi starring Prabhas.",
+    "director": "Maruthi Dasari",
+    "year": "2026",
+    "genre": "Horror-comedy, Romance, Fantasy"
+  },
+  {
+  "id": 15,
+  "title": "Dhurandhar",
+  "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnoW-XKdKhcAakAJMLFh2-Dwi99qvsPEdG4A&s",
+  "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Dubbed/Dhurandhar+1.mp4",
+  "description": "An intense action thriller filled with suspense, powerful confrontations, and high-stakes drama.",
+  "director": "Aditya Dhar",
+  "year": "2025",
+  "genre": "Action, Thriller, Drama"
+},
+  {
+    "id": 14,
+    "title": "Kannappa",
+    "thumbnail":"https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Prabhas/Kannappa-44.jpg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Prabhas/Kannappa.mp4",
+    "description": "The story of Kannappa, a tribal hunter devoted to Lord Shiva.",
+    "director": "Mukesh Kumar Singh",
+    "year": "2025",
+    "genre": "Action, Drama, Fantasy, Period, Devotional"
+  },
+  {
+  "id": 13,
+  "title": "Mahavatar Narsimha",
+  "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-WVGmQmbe7J_pbklX8kLgp8PVA_G2e6dqZWGF63MqNn0ilreWEdfoVlUB9ggleJs2THrA&s=10",
+  "video": "",
+  "description": "A mythological action drama based on the powerful avatar of Lord Narasimha, showcasing divine rage, justice, and epic battles.",
+  "director": "Ashwin Kumar",
+  "year": "2024",
+  "genre": "Mythology, Action, Drama"
+},
+  {
+    "id": 12,
+    "title": "Pushpa 2: The Rule",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Allu+Arjun/Pushpa_The_Rule-21.jpeg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/AA/Pushpa_2_The_Rule.mkv",
+    "description": "Pushpa continues his rise while facing powerful enemies and political forces.",
+    "director": "Sukumar",
+    "year": "2024",
+    "genre": "Action, Crime"
+  },
+  {
+  "id": 11, 
+  "title": "Hi Nanna",
+  "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2DJAqNidqNov7J2B6qYZ1VooBrFUsAHivng&s", 
+  "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Nani/Hi+Nanna.mp4",
+  "description": "A heartwarming emotional drama about a father, his daughter, and a beautiful love story filled with emotions and memories.",
+  "director": "Shouryuv",
+  "year": "2023",
+  "genre": "Romance, Drama, Family"
+},
+  {
+    "id": 10,
+    "title": "Salaar: Part 1 – Ceasefire",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Prabhas/Salaar-21.jpeg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Salaar_part_1.mp4",
+    "description": "Two friends become enemies in a violent kingdom.",
+    "director": "Prashanth Neel",
+    "year": "2023",
+    "genre": "Action, Thriller"
+  },
+  {
+    "id": 9,
+    "title": "RRR",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/NTR/RRR.jpg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/NTR/RRR.mp4",
+    "description": "A fictional story of two Indian revolutionaries fighting against the British Empire.",
+    "director": "S.S. Rajamouli",
+    "year": "2022",
+    "genre": "Action-Drama"
+  },
+  {
+    "id": 8,
+    "title": "Maayon",
+    "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/05448f4c1b4e86e643ca067e448f586f7ad0f1229ad4f2e4e748eb1b560b373e.jpg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Other/Maayon.mp4",
+    "description": "An archaeologist uncovers dark secrets linked to an ancient temple.",
+    "director": "Kishore",
+    "year": "2022",
+    "genre": "Mystery, Thriller"
+  },
+  {
+    "id": 7,
+    "title": "Radhe Shyam",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Prabhas/Radhe-Shyam-20.jpg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Prabhas/Radhe+Shyam.mp4",
+    "description": "A palmist who can see the future falls in love.",
+    "director": "Radha Krishna Kumar",
+    "year": "2022",
+    "genre": "Romance, Drama"
+  },
+  {
+    "id": 6,
+    "title": "Pushpa: The Rise",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Allu+Arjun/Pushpa-The-Rise-20.jpg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/AA/Pushpa_1.mp4",
+    "description": "A daily wage laborer rises to power in the red sandalwood smuggling syndicate.",
+    "director": "Sukumar",
+    "year": "2021",
+    "genre": "Action, Crime"
+  },
+  {
+    "id": 5,
+    "title": "Saaho",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Prabhas/Saaho-19.jpg",
+    "video": "",
+    "description": "An undercover officer gets involved in a massive robbery.",
+    "director": "Sujeeth",
+    "year": "2019",
+    "genre": "Action, Thriller"
+  },
+  {
+    "id": 4,
+    "title": "Naa Peru Surya, Naa Illu India",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Allu+Arjun/Naa-Peru-Surya-Naa-Illu-India-18.jpg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/naa-peru-surya-fixed.mp4",
+    "description": "An army officer with anger issues must prove his discipline and patriotism.",
+    "director": "Vakkantham Vamsi",
+    "year": "2018",
+    "genre": "Action"
+  },
+  {
+    "id": 3,
+    "title": "Baahubali: The Conclusion",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Prabhas/Baahubali-18.jpg",
+    "video": "",
+    "description": "The story of Mahishmati kingdom continues with epic battles.",
+    "director": "S. S. Rajamouli",
+    "year": "2017",
+    "genre": "Action, Fantasy"
+  },
+  {
+    "id": 2,
+    "title": "Pelli Choopulu",
+    "thumbnail": "https://sund-images.sunnxt.com/7766/1000x1500_PelliChupulu_7766_b5fed837-1fac-4911-839e-318ba656117f.jpg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Vijay+Deverakonda/Pelli_Choopulu.mp4",
+    "description": "A carefree young man and an ambitious woman build a successful food business.",
+    "director": "Tharun Bhascker",
+    "year": "2016",
+    "genre": "Romance, Comedy, Drama"
+  },
+  {
+    "id": 1,
+    "title": "Baahubali: The Beginning",
+    "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Prabhas/Baahubaali-17.jpg",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Prabhas/Baahubali_1.mp4",
+    "description": "A young man learns about his royal heritage and destiny.",
+    "director": "S. S. Rajamouli",
+    "year": "2015",
+    "genre": "Action, Fantasy"
+  }
+]

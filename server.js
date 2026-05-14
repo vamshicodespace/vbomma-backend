@@ -3,6 +3,7 @@ const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
 const multer = require("multer");
+const rateLimit = require("express-rate-limit");
 
 const app = express();
 
@@ -10,26 +11,12 @@ app.use(cors());
 app.use(express.json());
 
 
-//  =================  Smart bot blocking  =================
+// ================= RATE LIMIT (SAFE PROTECTION) =================
 
-app.use((req, res, next) => {
-  const ua = req.headers['user-agent'] || "";
-
-  // Allow Google
-  if (ua.includes("Googlebot")) return next();
-
-  // Block aggressive bots
-  if (
-    ua.includes("bot") ||
-    ua.includes("crawler") ||
-    ua.includes("spider") ||
-    ua === ""
-  ) {
-    return res.status(403).send("Blocked");
-  }
-
-  next();
-});
+app.use(rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 200 // limit each IP
+}));
 
 
 // ================= PATH =================
@@ -45,7 +32,11 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 // ================= READ MOVIES =================
 
 function readMovies() {
-  return JSON.parse(fs.readFileSync(moviesPath, "utf-8"));
+  try {
+    return JSON.parse(fs.readFileSync(moviesPath, "utf-8"));
+  } catch (err) {
+    return [];
+  }
 }
 
 
@@ -76,18 +67,19 @@ const upload = multer({ storage });
 // ================= TEST ROUTE =================
 
 app.get("/", (req, res) => {
-  res.send("OTT Backend Running");
+  res.send("Backend running successfully");
 });
 
 
 // ================= GET MOVIES =================
 
 app.get("/movies", (req, res) => {
-
-  const movies = readMovies();
-
-  res.json(movies);
-
+  try {
+    const movies = readMovies();
+    res.json(movies);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to load movies" });
+  }
 });
 
 
@@ -95,28 +87,28 @@ app.get("/movies", (req, res) => {
 
 app.post("/upload", upload.single("movie"), (req, res) => {
 
-  const movies = readMovies();
+  try {
 
-  const newMovie = {
+    const movies = readMovies();
 
-    id: Date.now(),
+    const newMovie = {
+      id: Date.now(),
+      title: req.body.title,
+      thumbnail: req.body.thumbnail,
+      video: `/uploads/${req.file.filename}`
+    };
 
-    title: req.body.title,
+    movies.push(newMovie);
+    saveMovies(movies);
 
-    thumbnail: req.body.thumbnail,
+    res.status(201).json({
+      message: "Movie uploaded successfully",
+      movie: newMovie
+    });
 
-    video: `/uploads/${req.file.filename}`
-
-  };
-
-  movies.push(newMovie);
-
-  saveMovies(movies);
-
-  res.status(201).json({
-    message: "Movie Uploaded Successfully",
-    movie: newMovie
-  });
+  } catch (err) {
+    res.status(500).json({ error: "Upload failed" });
+  }
 
 });
 
@@ -126,7 +118,5 @@ app.post("/upload", upload.single("movie"), (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-
   console.log("Backend running on port " + PORT);
-
 });

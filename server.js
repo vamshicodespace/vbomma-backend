@@ -10,6 +10,28 @@ app.use(cors());
 app.use(express.json());
 
 
+//  =================  Smart bot blocking  =================
+
+app.use((req, res, next) => {
+  const ua = req.headers['user-agent'] || "";
+
+  // Allow Google
+  if (ua.includes("Googlebot")) return next();
+
+  // Block aggressive bots
+  if (
+    ua.includes("bot") ||
+    ua.includes("crawler") ||
+    ua.includes("spider") ||
+    ua === ""
+  ) {
+    return res.status(403).send("Blocked");
+  }
+
+  next();
+});
+
+
 // ================= PATH =================
 
 const moviesPath = path.join(__dirname, "movies.json");

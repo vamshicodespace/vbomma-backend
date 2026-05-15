@@ -1,4 +1,14 @@
 [
+  {
+  "id": 26,
+  "title": "Dacoi",
+  "thumbnail": "https://cdn.district.in/movies-assets/images/cinema/Dacoit_Poster-649ec270-3312-11f1-b3d5-d331ad8039d4.jpg",
+  "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/adavi+shesh/Dacoit.mp4",
+  "description": "An intense action drama about former lovers who become enemies and face dangerous situations filled with emotions, revenge, and survival.",
+  "director": "Shaneil Deo",
+  "year": "2026",
+  "genre": "Action, Drama, Thriller"
+},
 
 {
   "id": 25,

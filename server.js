@@ -10,85 +10,54 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
-// ================= RATE LIMIT (SAFE PROTECTION) =================
-
+// RATE LIMIT
 app.use(rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 200 // limit each IP
+  windowMs: 15 * 60 * 1000,
+  max: 200
 }));
 
-
-// ================= PATH =================
-
+// PATH
 const moviesPath = path.join(__dirname, "movies.json");
 
-
-// ================= STATIC FOLDERS =================
-
+// STATIC
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-
-// ================= READ MOVIES =================
-
+// READ MOVIES
 function readMovies() {
   try {
-    return JSON.parse(fs.readFileSync(moviesPath, "utf-8"));
+    const data = fs.readFileSync(moviesPath, "utf-8");
+    return JSON.parse(data);
   } catch (err) {
     return [];
   }
 }
 
-
-// ================= SAVE MOVIES =================
-
+// SAVE MOVIES
 function saveMovies(movies) {
   fs.writeFileSync(moviesPath, JSON.stringify(movies, null, 2));
 }
 
-
-// ================= MULTER STORAGE =================
-
+// MULTER
 const storage = multer.diskStorage({
-
-  destination: (req, file, cb) => {
-    cb(null, "uploads/");
-  },
-
-  filename: (req, file, cb) => {
-    cb(null, Date.now() + "-" + file.originalname);
-  }
-
+  destination: (req, file, cb) => cb(null, "uploads/"),
+  filename: (req, file, cb) => cb(null, Date.now() + "-" + file.originalname)
 });
-
 const upload = multer({ storage });
 
-
-// ================= TEST ROUTE =================
-
+// TEST ROUTE
 app.get("/", (req, res) => {
   res.send("Backend running successfully");
 });
 
-
-// ================= GET MOVIES =================
-
+// ✅ FIXED MOVIES ROUTE
 app.get("/movies", (req, res) => {
-  try {
-    const movies = readMovies();
-    res.json(movies);
-  } catch (err) {
-    res.status(500).json({ error: "Failed to load movies" });
-  }
+  const movies = readMovies();
+  res.json(movies);
 });
 
-
-// ================= UPLOAD MOVIE =================
-
+// UPLOAD MOVIE
 app.post("/upload", upload.single("movie"), (req, res) => {
-
   try {
-
     const movies = readMovies();
 
     const newMovie = {
@@ -101,22 +70,14 @@ app.post("/upload", upload.single("movie"), (req, res) => {
     movies.push(newMovie);
     saveMovies(movies);
 
-    res.status(201).json({
-      message: "Movie uploaded successfully",
-      movie: newMovie
-    });
-
+    res.json({ success: true, movie: newMovie });
   } catch (err) {
     res.status(500).json({ error: "Upload failed" });
   }
-
 });
 
-
-// ================= START SERVER =================
-
+// START
 const PORT = process.env.PORT || 5000;
-
 app.listen(PORT, () => {
   console.log("Backend running on port " + PORT);
 });

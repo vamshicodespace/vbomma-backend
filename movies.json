@@ -1,5 +1,14 @@
 [
-
+  {
+  "id": 26,
+  "title": "Godari Gattupaina",
+  "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXGV9Mk1YtqD5QRX42EvElaCX3ge7DTrrvi9hmYv0p5LCTZt3D",
+  "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Other/Godari+Gattupaina.mp4",
+  "description": "A thrilling action drama filled with mystery, intense emotions, and powerful confrontations.",
+  "director": "Subash Chandra",
+  "year": "2026",
+  "genre": "Romance, Comedy, and Drama"
+},
 {
   "id": 25,
   "title": "Raakasa",
@@ -85,7 +94,7 @@
     "id": 17,
     "title": "Dhurandhar: The Revenge",
     "thumbnail": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/thumbnails/Dubbed/Dhurandhar.jpeg",
-    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Dubbed/Dhurandhar-+The+Revenge.mp4",
+    "video": "https://my-ott-movie-storage-123.s3.ap-south-1.amazonaws.com/movies/Dubbed/Dhurandhar+The+Revenge+(2026)+720p+Telugu+HQ+HDRip+-+x264+-+(DD%2B5.1+-+192Kbps+%26+AAC)+-+2.7GB+-+ESub.mkv",
     "description": "An undercover agent rises in Pakistan seeking revenge for his family's murder.",
     "director": "Aditya Dhar",
     "year": "2026",

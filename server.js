@@ -58,15 +58,24 @@ app.get("/", (req, res) => {
   res.send("Backend running");
 });
 
-// MOVIES
+// GET ALL MOVIES
 app.get("/movies", (req, res) => {
   const movies = readMovies();
-
   // latest first
   movies.sort((a, b) => b.id - a.id);
-
   res.set("Cache-Control", "no-store");
   res.json(movies);
+});
+
+// GET SINGLE MOVIE BY ID
+app.get("/movies/:id", (req, res) => {
+  const movies = readMovies();
+  const id = parseInt(req.params.id);
+  const movie = movies.find(m => m.id === id);
+  if (!movie) {
+    return res.status(404).json({ error: "Movie not found" });
+  }
+  res.json(movie);
 });
 
 // UPLOAD
@@ -94,13 +103,11 @@ app.post("/upload", upload.single("movie"), (req, res) => {
 app.delete("/movies/:id", (req, res) => {
   const movies = readMovies();
   const id = parseInt(req.params.id);
-
   const filtered = movies.filter(m => m.id !== id);
   saveMovies(filtered);
-
   res.json({ success: true });
 });
 
 // START
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log("Running on " + PORT));
+app.listen(PORT, () => console.log("Running on port " + PORT));
